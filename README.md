@@ -1,6 +1,6 @@
 # 艾夫尔·贸合 F2H — AI 跨境供应链智能撮合原型
 
-> P0.1 可交互产品演示（基于业务架构 V0.8），**不是生产交易系统**。
+> P0.2 可交互产品演示（基于业务架构 V0.8），**不是生产交易系统**。
 
 ## 产品边界
 
@@ -26,7 +26,7 @@ npm run build     # public → dist
 npm run check     # 测试 + 构建
 ```
 
-Vercel 项目应设置 **Framework: Other**、**Build Command: `npm run build`**、**Output Directory: `dist`**。域名拟为 `maohe.baogaoye.com`；不要将 `baogaoye.com` 顶级域名转向本项目。
+Vercel 项目应设置 **Framework: Other**、**Build Command: `npm run build`**、**Output Directory: `dist`**。正式演示子域名为 `maohe.baogaoye.cn`（P0.1）；P0.2仅使用独立 Preview，不覆盖正式版本；不要将 `baogaoye.com` 顶级域名转向本项目。
 
 ## 架构设计依据
 
@@ -39,3 +39,14 @@ Vercel 项目应设置 **Framework: Other**、**Build Command: `npm run build`**
 - 原型：P0.1 演示；
 - 真实API、鉴权、数据与AI：**未接入**；
 - 主域名和现有产品：不得因本项目变更。
+
+## P0.2 增量（待原型验收）
+
+- 三角色入口（海外买方/中国供应商/生态运营方）；
+- 虚构沙特食品采购五步深度情景；
+- 修改MOQ、交期、清真材料、英文包装条件，实时更新候选分类及解释；
+- 模拟人工核验、双方同意或拒绝、交易推进或受阻流程；
+- 无真实采购、企业、AI API、登录、存储、自动外发，全部状态仅存在当前页面内存；
+- 可一键重置。
+
+请勿把原型“演示材料已审核”解读为真实资质认证，具体资源关系与订单全部虚构。
