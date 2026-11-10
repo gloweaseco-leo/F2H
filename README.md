@@ -1,1 +1,41 @@
-# F2H
+# 艾夫尔·贸合 F2H — AI 跨境供应链智能撮合原型
+
+> P0.1 可交互产品演示（基于业务架构 V0.8），**不是生产交易系统**。
+
+## 产品边界
+
+从海外采购意向出发，识别中国供应资源，提供可解释的候选排序、证据缺口提醒、人工审核状态和双向授权演示。
+
+原型包含：
+- 经营总览 / 商机雷达 / 海外采购需求 / 中国供应链；
+- 证据核验与分级信息披露说明；
+- 双向同意与轻量商务协作看板；
+- 规则撮合实验室（非真实AI）；
+- JSON 演示摘要导出与移动端自适应。
+
+**重要：所有采购需求、企业、供应商、匹配分数及活动均为虚构样本。** 所有审核/授权按钮仅改变内存状态，不发送请求，不保存真实个人信息，不进行对外联系。不具备实际登录、数据库、多租户隔离、真实LLM、商用贸易限制筛查或真实数据核验能力。
+
+## 开发与验证
+
+要求 Node.js 20+（零第三方运行依赖）：
+
+```bash
+npm run dev       # http://localhost:4173
+npm run test      # 6项业务不变量与规则单测
+npm run build     # public → dist
+npm run check     # 测试 + 构建
+```
+
+Vercel 项目应设置 **Framework: Other**、**Build Command: `npm run build`**、**Output Directory: `dist`**。域名拟为 `maohe.baogaoye.com`；不要将 `baogaoye.com` 顶级域名转向本项目。
+
+## 架构设计依据
+
+- `docs/AIFER_Maohe_Business_Architecture_V0.8_FROZEN.md`：业务冻结基线；
+- `docs/AIFER_Maohe_Technical_Architecture_T0.1_RESEARCH.md`：技术路线研究，尚未冻结；
+- `docs/PROTOTYPE_SCOPE.md`：原型范围、质量门禁、正式产品缺口。
+
+## 状态
+
+- 原型：P0.1 演示；
+- 真实API、鉴权、数据与AI：**未接入**；
+- 主域名和现有产品：不得因本项目变更。

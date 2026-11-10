@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#091d32" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="description" content="艾夫尔·贸合 F2H — AI跨境供应链撮合平台交互原型。所有企业和商机信息均为模拟数据。" />
+  <title>艾夫尔·贸合 F2H · 跨境供应链智能撮合</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar" aria-label="主导航">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div><div class="brand-cn">艾夫尔·贸合<span class="brand-english">F2H</span></div><div class="brand-sub">CROSS-BORDER INTELLIGENCE</div></div></div>
+      <div class="side-eyebrow">业务工作空间</div>
+      <nav class="nav-list" id="main-nav"></nav>
+      <div class="sidebar-bottom"><div class="sidebar-status"><span class="status-dot"></span><div><strong>原型演示环境</strong><small>模拟数据 · 无真实交易</small></div></div><button class="sidebar-feedback" type="button" data-action="about"><span class="i">ⓘ</span> 关于演示版本 <span>↗</span></button></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><div class="top-left"><button class="icon-button hamburger" type="button" data-action="menu" aria-label="展开菜单">☰</button><span class="breadcrumb">业务控制台</span><span class="crumb-divider">/</span><span id="crumb-current">经营总览</span></div><div class="top-right"><div class="search-wrap"><span class="search-symbol">⌕</span><input id="global-search" type="search" placeholder="搜索商机、品类、地区…" aria-label="搜索商机与供应商" /><kbd>/</kbd></div><span class="top-sep"></span><button class="avatar-button" type="button" data-action="about" aria-label="当前演示身份">演</button></div></header>
+      <main id="view" tabindex="-1"></main>
+      <footer class="site-footer"><span>© 2026 艾夫尔 · 贸合 F2H</span><span>业务架构 V0.8 · 产品演示 P0.1</span><span>所有内容均为虚构样本，仅用于验证交互与业务流程</span></footer>
+    </div>
+  </div>
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div><aside id="drawer" class="drawer" aria-label="商机详情" aria-modal="true" role="dialog" hidden></aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
