@@ -3,7 +3,7 @@ import path from 'node:path';
 const root = process.cwd();
 const source = path.join(root, 'public');
 const output = path.join(root, 'dist');
-const mandatory = ['index.html', 'styles.css', 'app.js', 'data.js', 'matching.js'];
+const mandatory = ['index.html', 'styles.css', 'app.js', 'data.js', 'matching.js','p02.js','p02.css','p02-engine.js'];
 const files = await readdir(source);
 for (const file of mandatory) {
   if (!files.includes(file)) throw new Error(`Missing required prototype file: ${file}`);
