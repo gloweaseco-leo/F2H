@@ -10,6 +10,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/p02.css" />
+  <link rel="stylesheet" href="/p03-mobile.css" />
 </head>
 <body>
   <div id="app">
@@ -21,12 +22,17 @@
     </aside>
     <div class="main-shell">
       <header class="topbar"><div class="top-left"><button class="icon-button hamburger" type="button" data-action="menu" aria-label="展开菜单">☰</button><span class="breadcrumb">业务控制台</span><span class="crumb-divider">/</span><span id="crumb-current">经营总览</span></div><div class="top-right"><div class="search-wrap"><span class="search-symbol">⌕</span><input id="global-search" type="search" placeholder="搜索商机、品类、地区…" aria-label="搜索商机与供应商" /><kbd>/</kbd></div><span class="top-sep"></span><button class="avatar-button" type="button" data-action="about" aria-label="当前演示身份">演</button></div></header>
+      <div id="p03-role-banner" class="p03-role-bar" aria-label="当前演示角色，点击切换"></div>
       <main id="view" tabindex="-1"></main>
       <footer class="site-footer"><span>© 2026 艾夫尔 · 贸合 F2H</span><span>业务架构 V0.8 · 产品演示 P0.2</span><span>所有内容均为虚构样本，仅用于验证交互与业务流程</span></footer>
     </div>
   </div>
   <div id="drawer-backdrop" class="drawer-backdrop" hidden></div><aside id="drawer" class="drawer" aria-label="商机详情" aria-modal="true" role="dialog" hidden></aside>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <nav id="p03-bottom-nav" aria-label="手机端角色导航"></nav>
+  <div id="p03-overlay" hidden></div>
+  <section id="p03-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="p03-sheet-title"></section>
   <script type="module" src="/app.js"></script>
+  <script type="module" src="/p03-mobile.js"></script>
 </body>
 </html>
