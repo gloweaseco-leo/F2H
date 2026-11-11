@@ -40,7 +40,7 @@ function navigateTo(destination){
 }
 function renderHeader(){
   const info=ROLE_INFO[role()];
-  bar.innerHTML=`<button type="button" class="p03-role-trigger" data-p03="roles" aria-label="当前正在体验：${info.name}，点击切换角色"><span class="p03-role-leading">${svg(info.icon)}</span><span class="p03-role-text"><span class="p03-role-eyebrow"><i class="p03-role-signal" aria-hidden="true"></i> 当前正在体验 · 点击切换角色</span><strong>${info.name} <span class="p03-demo-tag">原型身份</span></strong></span><span class="p03-role-change">切换角色 <span class="p03-role-chevron" aria-hidden="true">⌄</span></span></button>`;
+  bar.innerHTML=`<button type="button" class="p03-role-trigger" data-p03="roles" aria-label="当前正在体验：${info.name}。请切换你的身份"><span class="p03-role-leading">${svg(info.icon)}</span><span class="p03-role-text"><span class="p03-role-eyebrow"><i class="p03-role-signal" aria-hidden="true"></i> 当前正在体验</span><strong class="p03-role-prompt">请切换你的身份</strong><span class="p03-role-current">当前身份：<b>${info.name}</b><span class="p03-demo-tag">演示</span></span></span><span class="p03-role-change" aria-hidden="true"><span class="p03-role-chevron">⌄</span></span></button>`;
 }
 function renderBottom(){
   const roleKey=role();const current=activeMobileTab(roleKey,page(),p02State.step);
